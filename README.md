@@ -24,7 +24,8 @@ This is a summary of the official HDP tutorial https://hortonworks.com/tutorial/
    - sudo chmod 400 [YOUR_KEY].pem
    - Connect your instance using its public DNS:
 
-    ``` ssh -i "[YOUR_KEY].pem" [USERNAME]@[DNS IPv4 public] 
+    ``` 
+    ssh -i "[YOUR_KEY].pem" [USERNAME]@[DNS IPv4 public] 
     ```
 
  3. Check out the scripts with `git clone https://github.com/AnassYKN/HDP_sandbox_EC2_AWS.git` (before to do that check if you have git on your instance) 
@@ -33,15 +34,18 @@ This is a summary of the official HDP tutorial https://hortonworks.com/tutorial/
 
     You will find the script on git repo to install docker on your EC2 instance 
 
-    ``` bash install_docker.sh
+    ``` 
+    bash install_docker.sh
     ``` 
 
 5. Run `docker info` to confirm docker is working without `sudo`
 
 6. If you want to install the version HDP 3.0.1  you follow:
-   ``` cd HDP-Sandbox-AWS/HDP_3.0.1
+   ``` 
+   cd HDP-Sandbox-AWS/HDP_3.0.1
    ```
-   ```bash docker-deploy-hdp30.sh
+   ```
+   bash docker-deploy-hdp30.sh
    ```
    It will take a while to install.
 
